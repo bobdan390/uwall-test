@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button:hover {
+  opacity: 87%;
+}
+
+a:hover {
+  opacity: 87%;
+}
+
+@keyframes changeOpacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}
+
+.effectOpacity {
+  animation-duration: 3s;
+  animation-name: changeOpacity;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.line-connect {
+  position: absolute;
+  margin-top: 35px;
+  z-index: 1;
+  width: 250px;
+  overflow-wrap: anywhere;
+  font-size: 17px;
+  font-weight: bold;
+  color: gray;
+}
+
+.overflow-uw::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflow-uw::-webkit-scrollbar-thumb {
+  background: #373737;
+  border-radius: 4px;
+}
+
+.overflow-uw::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.overflow-uw::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.overflow-uw::-webkit-scrollbar-track:hover,
+.overflow-uw::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+:focus-visible {
+  outline: none !important;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background: #121212;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #373737;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+* {
+  transition: opacity 200ms linear;
+}
+
+/* #f99236 */
+/* #6439b1 */
